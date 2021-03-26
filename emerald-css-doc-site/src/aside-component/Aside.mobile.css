@@ -1,0 +1,33 @@
+:root {
+    --primary-color: rgb(102, 51, 153);
+    --secondary-color: rgb(147, 197, 253);
+    --white: rgb(255, 255, 255);
+    --grey: rgb(175, 168, 168);
+    --light-grey: #ebebeb;
+    --black: rgb(0, 0, 0);
+  }
+  
+  @media screen and (max-width: 700px) {
+    .aside {
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom:0;
+      box-sizing: border-box;
+      grid-area: aside;
+      display: block;
+      padding: 1rem 2rem 1rem 1rem;
+      height: 100vh;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: var(--white);
+      z-index: 10;
+      width:250px;
+    }
+  
+    .aside.open {
+      visibility: visible;
+      overscroll-behavior: contain;
+    }
+  }
+  
