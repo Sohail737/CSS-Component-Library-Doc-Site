@@ -38,14 +38,14 @@
 .hamburger {
   visibility: hidden;
   padding: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   align-self: center;
 }
 
 .hamburger > svg {
   color: var(--white);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 /* 

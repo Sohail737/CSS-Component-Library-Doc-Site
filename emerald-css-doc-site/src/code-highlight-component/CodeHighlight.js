@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from "react";
+import { React } from "react";
 // import Prism from "prismjs";
 import {PrismLight as SyntaxHighlighter} from "react-syntax-highlighter";
 import {vscDarkPlus} from "react-syntax-highlighter/dist/esm/styles/prism";

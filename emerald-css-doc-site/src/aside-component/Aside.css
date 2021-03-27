@@ -24,6 +24,21 @@
   
 }
 
+.aside-nav .stacked-list :hover a{
+  background-color: var(--primary-color);
+  border-radius:0.2rem;
+  color: var(--white);
+
+}
+.aside-nav .stacked-list :hover {
+  background-color: var(--primary-color);
+  border-radius:0.2rem;
+  color: var(--white);
+
+}
+
+
+
 .aside-nav > h4 {
   padding: 0.2rem 0.5rem;
   margin: 0.2rem 0.5rem;
