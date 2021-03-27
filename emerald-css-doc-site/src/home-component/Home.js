@@ -1,5 +1,6 @@
 import "./Home.css";
 import "./Home.mobile.css";
+import {routeNames} from "../misc/Constants"
 
 export const Home = ({setRoute}) => {
   return (
@@ -12,7 +13,7 @@ export const Home = ({setRoute}) => {
           Integrate Emerald's CSS components in your project for an immersive
           user experience. Use classes and start building your UI
         </p>
-        <button onClick={()=>setRoute("docs")} class="btn primary">Get Started</button>
+        <button onClick={()=>setRoute(routeNames.docs)} class="btn primary">Get Started</button>
       {/* <div className="home-content">
         
       </div> */}

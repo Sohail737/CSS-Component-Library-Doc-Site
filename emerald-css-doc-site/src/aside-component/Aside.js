@@ -8,12 +8,13 @@ const components = [
   { name: "Badge", anchor: "#badge" },
   { name: "Card", anchor: "#card" },
   { name: "Modal", anchor: "#modal" },
+  { name: "List", anchor: "#list" }
 ];
 
 export const Aside = () => {
-  const { openAside, setOpenAside } = useAside();
+  const { isAsideOpen, setIsAsideOpen } = useAside();
   return (
-    <div className={openAside ? "aside open" : "aside"}>
+    <div className={isAsideOpen ? "aside open" : "aside"}>
       <div className="aside-nav">
         <h4>Getting Started</h4>
         <ul className="stacked-list">
@@ -26,7 +27,7 @@ export const Aside = () => {
           {components.map((comp) => {
             return (
               <li  key={comp.anchor} className="list-item">
-                <a href={comp.anchor} onTouchEnd={()=>setTimeout(()=>setOpenAside(false),0)}>{comp.name}</a>
+                <a href={comp.anchor} onTouchEnd={()=>setTimeout(()=>setIsAsideOpen(false),0)}>{comp.name}</a>
               </li>
             );
           })}

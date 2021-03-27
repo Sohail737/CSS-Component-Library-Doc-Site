@@ -39,16 +39,24 @@ h4 {
   /* padding: 0.3rem; */
 }
 
+.anchor{
+  height:0.7rem;
+}
+
 .component-container {
   display:flex;
   align-items: center;
   flex-wrap:wrap;
   box-sizing: border-box;
-  margin: 1rem 0;
-  padding: 1rem 0;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
   position: relative;
   /* min-width: 20rem; */
   min-height: 30vh;
+}
+
+.component-container > button{
+  margin:0 0.5rem;
 }
 
 .badge-container {
@@ -81,12 +89,23 @@ h4 {
 
 /* Override badge Position CSS */
 
-.badge-container .badge {
-  top: 0.3rem;
-  left: 0.5rem;
+.badge-container > .badge {
+  top: 0.6rem;
+  left: 0.6rem;
+}
+
+.badge-container > .badge.online ,.badge.offline{
+  top: 3.7rem;
+  right: 3rem;
+  left: revert;
 }
 
 .card-img > .badge {
   top: 0.7rem;
   right: 0.7rem;
+}
+
+.list-logo{
+  margin: 0.5rem;
+    line-height: 0;
 }
